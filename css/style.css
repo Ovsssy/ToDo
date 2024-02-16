@@ -44,6 +44,7 @@ body {
 }
 @media (min-width: 768px) {
   .main-container {
+    padding-top: 0;
     width: auto;
   }
 }
@@ -59,7 +60,6 @@ body {
     margin-top: -27px;
     margin-bottom: 64px;
     gap: 8px;
-    justify-content: baseline;
   }
 }
 

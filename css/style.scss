@@ -40,6 +40,7 @@ body{
     width: 100%;
     padding: 20px;
     @media (min-width:768px) {
+        padding-top: 0;
         width: auto;
     }
 }
@@ -49,7 +50,6 @@ body{
         margin-top: -27px;
         margin-bottom: 64px;   
         gap: 8px;
-        justify-content: baseline;
     }
     display: flex;
     justify-content: space-between;
