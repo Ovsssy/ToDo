@@ -1,3 +1,5 @@
+//Добавление и удаление задачи
+
 const inputBox = document.getElementById('input-box');
 const taskList = document.getElementById('task-list');
 
@@ -42,6 +44,8 @@ function showTask(){
 
 showTask();
 
+
+// Фильтрация
 
 const filterBox = document.querySelectorAll('.task-block__item');
 
