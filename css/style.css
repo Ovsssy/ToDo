@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  overflow-x: hidden;
+  font-family: "Inter";
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin-bottom: 25px;
+  background-color: #0D0D0D;
+  box-shadow: 0 0 1px 1px #000;
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 80px 0;
+    margin-bottom: 0;
+  }
+}
+
+.header__logotype {
+  display: flex;
+  gap: 12px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  width: 100%;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main-container {
+    width: auto;
+  }
+}
+
+.input-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+@media (min-width: 768px) {
+  .input-block {
+    margin-top: -27px;
+    margin-bottom: 64px;
+    gap: 8px;
+    justify-content: baseline;
+  }
+}
+
+.input-block__input {
+  width: 100%;
+  height: 40x;
+  padding-left: 10px;
+  background-color: #262626;
+  color: #808080;
+  border: 1px solid #0D0D0D;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .input-block__input {
+    width: 638px;
+    height: 54px;
+    padding-left: 20px;
+  }
+}
+
+.input-block__input:focus {
+  outline: none;
+  border: 1px solid #5E60CE;
+  color: #F2F2F2;
+}
+
+.input-block__btn {
+  width: 75px;
+  height: 36px;
+  background-color: #1E6F9F;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .input-block__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 90px;
+    height: 54px;
+  }
+}
+
+.input-block__btn span {
+  display: none;
+}
+@media (min-width: 768px) {
+  .input-block__btn span {
+    display: block;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 500;
+    color: #F2F2F2;
+  }
+}
+
+.input-block__btn:hover {
+  background-color: #4EA8DE;
+}
+
+.input-block__btn:active {
+  background-color: #1b648f;
+}
+
+.navigation {
+  margin-bottom: 25px;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.navigation__item {
+  color: #4EA8DE;
+  cursor: pointer;
+}
+
+.navigation__item:hover {
+  color: #808080;
+}
+
+.navigation__item:active {
+  color: #333333;
+}
+
+.task-block__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.task-block__input {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+.task-block__delete {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: #333333;
+  background-image: url("../img/trash.svg");
+  border: none;
+}
+
+.task-block__delete:hover {
+  background-image: url("../img/trash-hover.svg");
+}
+
+.task-block__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 8px;
+  padding-left: 36px;
+  color: #F2F2F2;
+  background-color: #333333;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 140%;
+}
+@media (min-width: 768px) {
+  .task-block__item {
+    width: 736px;
+    padding: 16px;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+.task-block__item::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  left: 8px;
+  border-radius: 50%;
+  background-image: url("../img/circle.svg");
+}
+
+.task-block__item--checked {
+  color: #808080;
+  text-decoration: line-through;
+}
+
+.task-block__item--checked::before {
+  background-image: url("../img/circle-checked.svg");
+}
+
+.task-block__item:hover::before {
+  background-image: url("../img/circle-hover.svg");
+}
+
+.task-block__item--checked:hover::before {
+  background-image: url("../img/circle-checke-hover.svg");
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
